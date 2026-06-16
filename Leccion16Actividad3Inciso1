@@ -1,0 +1,25 @@
+Algoritmo Leccion16Actividad3Inciso1
+	Definir indice, comparador Como Entero
+	Definir existeRepetido Como Logico
+	Dimensionar  numerosEnteros[15]
+	existeRepetido = Falso
+	
+	Para indice = 1 Hasta 15 Hacer
+		Escribir "Ingrese el número ", indice, ": "
+		Leer numerosEnteros[indice]
+	FinPara
+	Para indice = 1 Hasta 14 Hacer
+		Para comparador = indice + 1 Hasta 15 Hacer
+			Si numerosEnteros[indice] = numerosEnteros[comparador] Entonces
+				existeRepetido = Verdadero
+			FinSi
+		FinPara
+	FinPara
+	Si existeRepetido Entonces
+		Escribir "Si se repite algun numero.."
+	SiNo
+		Escribir "No se repite ningun numero."
+	FinSi
+	
+	
+FinAlgoritmo
