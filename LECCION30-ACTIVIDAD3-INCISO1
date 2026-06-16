@@ -1,0 +1,34 @@
+class Program
+{
+    static void Main()
+    {
+        int indice, comparador;
+        bool existeRepetido = false;
+        int[] numerosEnteros = new int[15];
+        for (indice = 0; indice < 15; indice++)
+        {
+            Console.Write("Indique el numero: " + (indice + 1) + ": ");
+            numerosEnteros[indice] = int.Parse(Console.ReadLine());
+        }
+        for (indice = 0; indice < 14; indice++)
+        {
+            for (comparador = indice + 1; comparador < 15; comparador++)
+            {
+                if (numerosEnteros[indice] == numerosEnteros[comparador])
+                {
+                    existeRepetido = true;
+                }
+            }
+        }
+        if (existeRepetido)
+        {
+            Console.WriteLine("Si hay un numero repetido al menos.");
+        }
+        else
+        {
+            Console.WriteLine("No hay ningun numero repetido");
+        }
+
+
+
+    }
