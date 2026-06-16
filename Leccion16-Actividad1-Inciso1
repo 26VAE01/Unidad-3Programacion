@@ -1,0 +1,24 @@
+Algoritmo act1lec16
+	Definir col Como Caracter
+	
+	Dimension col[8]
+	
+	col[1] = "Marron"
+	col[2] = "MarronClaro"
+	col[3] = "Carmesi"
+	col[4] = "Rojo"
+	col[5] = "Amarillo"
+	col[6] = "VerdeOscuro"
+	col[7] = "Purpura"
+	col[8] = "Negro"
+	
+	Escribir "El valor del num1 es: ", col[1]
+	Escribir "El valor del num2 es: ", col[2]
+	Escribir "El valor del num3 es: ", col[3]
+	Escribir "El valor del num4 es: ", col[4]
+	Escribir "El valor del num5 es: ", col[5]
+	Escribir "El valor del num6 es: ", col[6]
+	Escribir "El valor del num7 es: ", col[7]
+	Escribir "El valor del num8 es: ", col[8]
+	
+FinAlgoritmo
