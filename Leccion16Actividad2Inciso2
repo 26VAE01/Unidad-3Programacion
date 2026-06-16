@@ -1,0 +1,22 @@
+Algoritmo Leccion16Actividad2Inciso2
+	definir nM, pM Como Entero
+	dimensionar nE[8]
+	Para i=1 Hasta 8 Hacer
+		escribir "Ingrese el número: ", i, ":"
+		leer nE[i]
+		Si indice=1 Entonces
+			nM=nE[i]
+			pM=i
+		SiNo
+			si nE[i]>nM Entonces
+				nM=nE[i]
+				pM=i
+				
+			FinSi
+		Fin Si
+	Fin Para
+	escribir "El número mayor es: ", nM
+	escribir "Se encuentra en la Posición: " pM
+	
+	
+FinAlgoritmo
