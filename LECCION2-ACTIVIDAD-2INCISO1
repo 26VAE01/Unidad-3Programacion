@@ -1,0 +1,29 @@
+internal class Program
+{
+    private static void Main(string[] args)
+    {
+        Console.WriteLine("===LECCION2ACTIVIDAD2INCISO1===");
+        Console.WriteLine("Alejandro Castañeda / Clave 11");
+
+        //Arreglo - Inicializa
+        int[] ep = new int[7];
+        int cpm = 0;
+
+        //Solicitar Edades
+        for (int i = 0; i < ep.Length; i++)
+        {
+            Console.WriteLine("Ingrese la edad " + (i+1)+":");
+            ep[i]=Convert.ToInt32(Console.ReadLine());
+            if (ep[i]>=18)
+                cpm++;
+        }
+        //Mostrar los datos
+        Console.Clear();
+        Console.WriteLine("Las edades ingresadas son:");
+        for (int i = 0;i < ep.Length;i++)
+        {
+            Console.WriteLine(ep[i] + " - ");
+        }
+        Console.WriteLine("La cantidad de personas mayores son: "+cpm);
+    }
+}
